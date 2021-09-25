@@ -3,85 +3,63 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Lau`s Personal Site</title>
+  <title>Laureano Diaz Velez</title>
+  <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="shortcut icon" href="Images/favicon.png">
+
+  <!-- Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@100&family=Sacramento&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <!--crop-circle.imageonline.co-->
-  <table cellspacing="20">
-    <tr>
-      <td><img src="Images/CV - LDV.jpeg" alt="Laureano Profile Picture" width="225" height="300"></td>
-      <td>
-        <h1>Laureano Díaz Vélez</h1>
-        <p><em>Analista de datos de la dirección de <strong>contenidos web</strong></em></p>
-        <p>Me gustan los libros de Tolkien pero quiero más tiempo para apreciarlos</p>
-      </td>
-    </tr>
-  </table>
-  <hr>
-  <h3>Libros que me gustan:</h3>
-  <ul>
-    <li>Tuneles</li>
-    <li>Agatha Christie Books</li>
-    <li>Quino`s comic books</li>
-  </ul>
-  <hr>
-  <h3>Work Experience</h3>
 
-  <!--
-Why using <thead>, <tbody> and <tfoot> if it works just fine without it and using the special tag such as <th>?
-Because, for example, if we are scrolling throgh the table, the heading will be fixed in place, so that its always visible
-Also, for javascript porpuses of hiding some blocks or even with css for stilish things
+  <div class="first">
+    <img class="top_cloud" src="Images/cloud.png" alt="">
+    <h1>Laureano Díaz Vélez</h1>
+    <p class="created_by">Un <span class="_pro">Pro</span>gramador</p>
+    <img class="bottom_cloud" src="Images/cloud.png" alt="">
+    <img src="Images/mountain.png" alt="">
+  </div>
 
-Avoid ussing table attributes, they are DEPRECATED. Stone-age, 80s 90s bee-gees stuff.
-    -->
-  <table cellspacing="20">
-    <thead>
-      <tr>
-        <th>Dates</th>
-        <th>Work</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>2018 - mid 2018</td>
-        <td>Junior analist on Ministry of Simplification</td>
-      </tr>
-      <tr>
-        <td>mid 2018 - 2020</td>
-        <td>Junior analist on Ministry of Production</td>
-      </tr>
-    </tbody>
+  <div class="middle-container">
+    <div class="profile">
+      <img class="h_and_w" src="Images/Profile me.png" alt="">
+      <h2>Buenas Buenas...</h2>
+      <p>De MySQL a Python, de Python a Fullstack y de fullstack al universo virtual. Licenciatura en sistemas y analista en el Ministerio de Desarrollo Humano y Habitat</p>
+    </div>
+    <hr>
+    <div class="skills">
+      <h2>Acerca de mi</h2>
+      <div class="skill-row">
+        <img class="h_and_w" src="Images/Love travel.png" alt="">
+        <h3>Hello World to the world</h3>
+        <p>Pasionado de ambos mundos: print("Hello world") y recorrerlo a la vez. Foto: Castillo de España.</p>
+      </div>
+      <div class="skill-row">
+        <img class="h_and_w" src="Images/Drinks.png" alt="">
+        <h3>Skills</h3>
+        <p>No hay nada mejor que codear un dia de semana a la noche con un buen martini americano. Bartender en mi tiempo libre, no dulce Team!</p>
+      </div>
+    </div>
+    <hr>
+    <div class="contact-me">
+      <h2>Contactame</h2>
+      <h3>Si te gusta la cerveza artesanal tanto como a mi.</h3>
+      <p>¿Codear, viajar, bartender? Si todavia no logré entender bien algún aspecto de la vida, mandame un mail y charlemoslo para descubrirlo.</p>
+      <a class="btn" href="mailto:laureano.diaz.velez@gmail.com">CONTACT ME</a>
+    </div>
+  </div>
 
-  </table>
-  <hr>
-  <h3><a href="Hobbies.html">My Hobbies</a></h3>
-  <p>For more information <a href="Contact me.html">contact me</a></p>
+  <!--Posibilidad de agregar pequeñas imagenes de las redes sociales-->
+  <div class="bottom-container">
+    <a class="footer-link" href="https://www.linkedin.com/in/laureano-d%C3%ADaz-v%C3%A9lez-a0a9461b8/">LinkedIn</a>
+    <a class="footer-link" href="https://www.instagram.com/laureanodiazvelez/">Instagram</a>
+    <a class="footer-link" href="https://www.freecodecamp.org/laureano_dv">FreeCodeCamp</a>
+    <p>© 2021 Laureano Díaz Vélez.</p>
+  </div>
 
-
-<!--
-instead of using one table and a paragraph
-i can use a table and a table inside each td of the first table
-In this second table i will have a tr and 2 tds, one for the skill and the other one for the stars
-
-This is not recommended
--->
-  <hr>
-  <h3>Skills</h3>
-  <table cellspacing="10">
-    <tr>
-      <td>Data analisys</td>
-      <td>🌟🌟🌟</td>
-    </tr>
-    <tr>
-      <td>Excel</td>
-      <td>🌟🌟🌟</td>
-    </tr>
-    <tr>
-      <td>Full Stack Web Programming</td>
-      <td>🌟🌟</td>
-    </tr>
-  </table>
 </body>
 
 </html>
